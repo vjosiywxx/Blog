@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = "text/css" href="contactMessage.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>YING'S Blog</title>
+</head>
+<body>
+    
+    <header class="header-menu-position">   
+            <a href ="logolink" class = "logo"><span>Y</span>ING's <span>B</span>log</a>
+            
+            <nav class="navbar"> 
+                <a href="home.html">HOME</a>
+                <a href="createanewpost.html">NEW A POST</a>
+                <a href="posts.php">POSTS</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="message.php">MESSAGE BOX</a>
+            </nav>
+
+        <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        </div>   
+
+    </header>
+   
+<div class="contacstClass">
+<h1>CONTACT ME</h1>
+    <form action="message.php" class="contactForm" method="POST">
+        <div class="inputBox">
+            <input type="text" name="name" placeholder="name"><br>
+            <input type="email" name="email" placeholder="email"><br>
+            <input type="number" name="number" placeholder="number"><br>
+            <input type="text" name="subject"placeholder="subject"><br>
+        </div>
+        <textarea name="message" name="message"placeholder="message" id="" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="send message" class="messageButton"><br>
+    </form>
+
+</div>
+
+    <footer>
+        <div class="copyright-part">
+            <p class="footertext">&copy;Josie Ying tries to create websites 2023</p>
+        </div>
+    </footer>
+
+</body>
+</html>

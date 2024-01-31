@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type = "text/css" href="createanewpost.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>YING'S Blog</title>
+</head>
+<body>
+    
+    <header class="header-menu-position">   
+            <a href ="logolink" class = "logo"><span>Y</span>ING's <span>B</span>log</a>
+            
+            <nav class="navbar"> 
+                <a href="home.html">HOME</a>
+                <a href="createanewpost.html">NEW A POST</a>
+                <a href="posts.php">POSTS</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="message.php">MESSAGE BOX</a>
+            </nav>
+
+        <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        </div>   
+
+    </header>
+   
+<section class="newpostClass" id ="newpostId">
+<h1>NEW A POST</h1>
+    <form action="posts.php" class="newpostForm" method="POST">
+        <div class="inputBox">
+            <table>
+                <div class="categories">
+                <tr><th>Post Category:</th><td>
+                <select name="postCategory" required class="select" id="postid">
+                   <option value="">PLEASE CHOOSE</option>
+                   <option value="1">Travel</option>
+                   <option value="2">Celebration</option>
+                   <option value="3">Daily Life</option>
+                   <option value="4">Thoughts</option>
+               </select>
+        </td></tr>
+       
+           <tr><th>Weather Category:</th><td>
+            <select name="weatherCategory" required class="select" id="weatherid">
+               <option value="">PLEASE CHOOSE</option>
+               <option value="1">Sunny</option>
+               <option value="2">Cloudy</option>
+               <option value="3">Windy</option>
+               <option value="4">Rainy</option>
+               <option value="5">Default</option>
+           </select>
+       </td></tr>
+    </div>
+
+            <input type="text" name="title" placeholder="title" required><br>
+            <input type="date" name="date" required><br>
+   
+        <textarea name="content" placeholder="Content" id="" cols="30" rows="10" required></textarea><br>
+    </table>
+        <input type="submit" value="Post" class="submitpostButton"><br>
+    </div>
+    </form>
+
+</section>
+
+    <footer>
+        <div class="copyright-part">
+            <p class="footertext">&copy;Josie Ying tries to create websites 2023</p>
+        </div>
+    </footer>
+
+</body>
+</html>
